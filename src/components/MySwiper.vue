@@ -15,12 +15,15 @@
 }
 .van-swipe-item {
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 .van-swipe-item img {
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
+/* .van-swipe__indicators {
+  left: 90%;
+} */
 </style>
 <script>
 export default {

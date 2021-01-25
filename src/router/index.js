@@ -4,6 +4,11 @@ import Home from '../views/Home.vue'
 import Mine from  "../views/Mine.vue";
 import Place from "../views/place.vue"
 import City from "../views/City.vue"
+import Movie from "../views/Movie.vue"
+import search from "../views/search.vue"
+import login from "../components/mine/login.vue"
+import Register from "../components/mine/Register.vue"
+import Loginin from "../components/mine/Loginin.vue"
 
 Vue.use(VueRouter)
 
@@ -14,12 +19,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import('../views/About.vue')
+    path: '/movie',
+    name: 'Movie',
+   component:Movie
   },
   {
     path:"/city",
@@ -35,7 +37,25 @@ const routes = [
     path:"/mine",
     name:"mine",
     component:Mine
-  }
+  }, 
+  {
+    path:"/search",
+    name:"search",
+    component:search
+  },
+  {
+    path:"/login",
+    name:"login",
+    component:login
+  }, {
+    path:"/Register",
+    name:"Register",
+    component:Register
+  }, {
+    path:"/Loginin",
+    name:"Loginin",
+    component:Loginin
+  },
 
 ]
 
