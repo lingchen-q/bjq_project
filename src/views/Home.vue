@@ -11,7 +11,6 @@
         <van-swipe-item>
           <img
             src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%253A%252F%252Fdingyue.ws.126.net%252F2021%252F0105%252F15257905j00qmg13y001cc000vj00hom.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614048757&t=f1bf32782183374852efce9537783b4a"
-            alt
           />
         </van-swipe-item>
         <van-swipe-item>
@@ -45,7 +44,7 @@
           </li>
         </ul>
         <div class="news-more">
-          <button>more</button>
+          <button @click="newmovies">more</button>
         </div>
       </div>
       <div class="hot-movies">
@@ -156,11 +155,54 @@
           <button>more</button>
         </div>
       </div>
+      <div class="log-keeper">
+        <div class="logkeeper-title">
+          <p>场记</p>
+        </div>
+        <div class="log-sq">
+          <div class="log-sqtop">
+            <div class="log-sqleft">
+              <p>神奇华盛顿</p>
+              <p>比神奇女侠更神奇</p>
+            </div>
+            <div class="log-sqright">
+              <img
+                src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1.jiemian.com%2F101%2Foriginal%2F20160725%2F146938220839639400.jpg&refer=http%3A%2F%2Fimg1.jiemian.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614173799&t=86450fff37b2eee7e88a7f1a58d21952"
+                alt
+              />
+            </div>
+          </div>
+          <div class="log-sqbottom">
+            <p>电影重灾区华盛顿，现实比电影更神奇</p>
+          </div>
+        </div>
+        <div class="log-fw">
+          <div class="log-fwtop">
+            <div class="log-fwleft">
+              <p>暂停营业变成永久停业，这些看片煲剧时朝思暮想的风味竟然再也吃不到了！</p>
+              <img
+                src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1.meituan.net%2Fdeal%2F8174e51b814dac73e46c9fed5be0fbeb122307.jpg&refer=http%3A%2F%2Fp1.meituan.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614175507&t=6406b14fbb4f8cbba96a4a7fef250e69"
+                alt
+              />
+            </div>
+            <div class="log-fwright">
+              <p>停留在2020的风味</p>
+            </div>
+          </div>
+          <div class="log-more">
+            <button>more</button>
+          </div>
+        </div>
+      </div>
+      <div class="log-bottom">
+        <p>片场/您的电影旅行指南</p>
+      </div>
       <div class="userless-box"></div>
     </van-pull-refresh>
   </div>
 </template>
 <script>
+//import movielist from '../model/filmModel'
 export default {
   data() {
     return {
@@ -230,6 +272,9 @@ export default {
       setTimeout(() => {
         this.isLoading = false;
       }, 1000);
+    },
+    newmovies() {
+      this.$router.push({ path: "./newmovies" });
     },
   },
 };
@@ -473,7 +518,7 @@ export default {
 /* 热门路线 */
 .hot-ways {
   margin: 0 10px;
-  height: 760px;
+  height: 800px;
 }
 .hotways-title {
   font-weight: bold;
@@ -544,7 +589,7 @@ export default {
 }
 .hotways-lun {
   margin-top: 40px;
-  height: 400px;
+  height: 340px;
   margin: 40px 10px 0 10px;
 }
 .hotways-top {
@@ -622,7 +667,7 @@ export default {
   overflow: hidden;
 }
 .hotways-more {
-  width: 100%;
+  /* width: 100%; */
   margin: 0 10px;
   height: 100px;
 }
@@ -635,8 +680,86 @@ export default {
   outline: 0;
   border-radius: 2px;
 }
+/* 场记 */
+.log-keeper {
+  width: 100%;
+  margin-top: 40px;
+}
+.logkeeper-title p {
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 0.426667rem;
+  line-height: 1.333333rem;
+}
+.log-sq {
+  /* width: 100%; */
+  margin: 0 10px;
+  height: 160px;
+  border-bottom: 1px dashed #c0c0c0;
+}
+.log-sqtop {
+  width: 100%;
+  height: 90%;
+}
+.log-sqleft {
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+.log-sqright {
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+.log-sqright img {
+  width: 100%;
+  height: 80px;
+}
+.log-fw {
+  height: 180px;
+  margin-top: 30px;
+}
+.log-fwtop {
+  height: 90%;
+}
+.log-fwleft {
+  width: 70%;
+  float: left;
+}
+.log-fwleft img {
+  width: 180px;
+  height: 100px;
+}
+.log-fwright {
+  width: 30%;
+  float: left;
+}
+.log-more {
+  /* width: 100%; */
+  margin: 0 10px;
+  height: 100px;
+}
+.log-more button {
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 20px;
+  background-color: transparent;
+  outline: 0;
+  border-radius: 2px;
+}
+.log-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  height: 10px;
+}
+.log-bottom p {
+  color: grey;
+}
 /* 空盒子 */
 .userless-box {
-  height: 80px;
+  height: 70px;
 }
 </style>

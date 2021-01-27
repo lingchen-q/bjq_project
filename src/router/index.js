@@ -9,7 +9,8 @@ import search from "../views/search.vue"
 import login from "../components/mine/login.vue"
 import Register from "../components/mine/Register.vue"
 import Loginin from "../components/mine/Loginin.vue"
-
+import setup from "../components/mine/setup.vue"
+import newmovies from "../components/Home/newmovies"
 Vue.use(VueRouter)
 
 const routes = [
@@ -55,6 +56,15 @@ const routes = [
     path:"/Loginin",
     name:"Loginin",
     component:Loginin
+  },{
+    path:"/setup",
+    name:"setup",
+    component:setup
+  },
+  {
+    path:"/newmovies",
+    name:"newmovies",
+    component:newmovies
   },
 
 ]

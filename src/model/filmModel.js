@@ -1,14 +1,17 @@
 import  axios  from  "./axios";
 
 export  default  {
-    getInfoById:(params)=>{
-        return  axios({
+    bannerList:()=>{
+        return axios({
             method:"get",
-            url:"https://m.maizuo.com/gateway",
-            params,
-            headers:{
-                "X-Host": "mall.film-ticket.film.info"
-            }
+            url:"banner"
         })
+    },
+    movielist:(params)=>{
+         return axios({
+             methods:'get',
+             url:'movielist',
+             params
+         })
     }
 }

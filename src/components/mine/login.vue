@@ -25,7 +25,7 @@
       </p>
       <p class="forgetpwd">忘记密码？</p>
     </div>
-    <div class="login-bottom">
+    <div class="login-tipss">
       <van-divider
         :style="{ color: '#c0c0c0', borderColor: '#c0c0c0', padding: '0 40px' }"
       >没有故事地点终究是冰冷的</van-divider>
@@ -33,6 +33,7 @@
   </div>
 </template>
 <script>
+import bus from "../../../bus";
 export default {
   // data() {},
   methods: {
@@ -45,6 +46,12 @@ export default {
     loginin() {
       this.$router.push({ path: "./Loginin" });
     },
+  },
+  created() {
+    bus.$emit("changeFlag", false);
+  },
+  beforeDestroy() {
+    bus.$emit("changeFlag", true);
   },
 };
 </script>
@@ -114,5 +121,8 @@ export default {
   margin-right: 14px;
   font-size: 14px;
   font-weight: 600;
+}
+.login-tipss {
+  margin-top: 50px;
 }
 </style>

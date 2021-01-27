@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div id="nav" v-show="flag">
       <van-tabbar v-model="active" @change="onChange">
         <van-tabbar-item icon="home-o">
           <div>首页</div>
@@ -23,10 +23,12 @@
   </div>
 </template>
 <script>
+import bus from "../bus";
 export default {
   data() {
     return {
       active: 0,
+      flag: true,
     };
   },
   methods: {
@@ -53,6 +55,13 @@ export default {
           break;
       }
     },
+  },
+  created() {
+    bus.$on("changeFlag", (flag) => {
+      //消失下面的
+      //注册了一个全局的方法
+      this.flag = flag;
+    });
   },
 };
 </script>
