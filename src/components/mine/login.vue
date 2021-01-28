@@ -28,7 +28,8 @@
     <div class="login-tipss">
       <van-divider
         :style="{ color: '#c0c0c0', borderColor: '#c0c0c0', padding: '0 40px' }"
-      >没有故事地点终究是冰冷的</van-divider>
+        >没有故事地点终究是冰冷的</van-divider
+      >
     </div>
   </div>
 </template>
@@ -44,10 +45,11 @@ export default {
       this.$router.push({ path: "./Register" });
     },
     loginin() {
-      this.$router.push({ path: "./Loginin" });
+      console.log(this.$router);
+      this.$router.push({ path: "/login/Loginin" });
     },
   },
-  created() {
+  mounted() {
     bus.$emit("changeFlag", false);
   },
   beforeDestroy() {

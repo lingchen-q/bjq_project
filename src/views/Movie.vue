@@ -1,6 +1,10 @@
 <template>
   <div class="movie">
-    <van-pull-refresh v-model="isLoading" @refresh="onRefresh" success-text="刷新成功">
+    <van-pull-refresh
+      v-model="isLoading"
+      @refresh="onRefresh"
+      success-text="刷新成功"
+    >
       <div class="searchBox">
         <div class="searchBox-img">
           <i class="iconfont icon-sousuo searchbox-i"></i>
@@ -17,7 +21,7 @@
         <p>银幕最美中国画</p>
       </div>
       <div class="allnavlist">
-        <div class="allnav">
+        <div class="allnav" @click="gotoall">
           <div class="allnav-top">
             <div class="allnav-left">
               <p>全部</p>
@@ -62,9 +66,9 @@
         </div>
         <div class="hotmovies-right">
           <ul>
-            <li v-for="(item,index) in hotmovieslist" :key="index">
+            <li v-for="(item, index) in hotmovieslist" :key="index">
               <img :src="item.img" />
-              <p>{{item.name}}</p>
+              <p>{{ item.name }}</p>
             </li>
           </ul>
         </div>
@@ -122,6 +126,9 @@ export default {
       setTimeout(() => {
         this.isLoading = false;
       }, 1000);
+    },
+    gotoall() {
+      this.$router.push("./allmovies");
     },
   },
 };

@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <van-pull-refresh v-model="isLoading" @refresh="onRefresh" success-text="刷新成功">
+    <van-pull-refresh
+      v-model="isLoading"
+      @refresh="onRefresh"
+      success-text="刷新成功"
+    >
       <div class="searchBox">
         <div class="searchBox-img">
           <!-- <img src="../../icon/sousuo.png" /> -->
@@ -37,10 +41,15 @@
           <p>最近更新</p>
         </div>
         <ul class="news-list">
-          <li class="news-list-li" v-for="(item,index) in newslist" :key="index">
+          <li
+            class="news-list-li"
+            v-for="(item, index) in newslist"
+            :key="index"
+            @click="gotodetails"
+          >
             <img :src="item.img" />
-            <p>{{item.name}}</p>
-            <p>{{item.des}}</p>
+            <p>{{ item.name }}</p>
+            <p>{{ item.des }}</p>
           </li>
         </ul>
         <div class="news-more">
@@ -63,15 +72,15 @@
             &emsp; &emsp;
             <span class="hotmovies-site-span2">31</span>
           </p>
-          <button>
+          <button @click="newmovies">
             <span>more</span>
           </button>
         </div>
         <div class="hotmovies-right">
           <ul>
-            <li v-for="(item,index) in hotmovieslist" :key="index">
+            <li v-for="(item, index) in hotmovieslist" :key="index">
               <img :src="item.img" />
-              <p>{{item.name}}</p>
+              <p>{{ item.name }}</p>
             </li>
           </ul>
         </div>
@@ -91,13 +100,13 @@
           </div>
         </div>
         <ul class="hotplaces-list">
-          <li v-for="(item,index) in hotplaces" :key="index">
+          <li v-for="(item, index) in hotplaces" :key="index">
             <img :src="item.img" />
-            <p>{{item.name}}</p>
+            <p>{{ item.name }}</p>
           </li>
         </ul>
         <div class="hotplaces-more">
-          <button>more</button>
+          <button @click="newmovies">more</button>
         </div>
       </div>
       <div class="hot-ways">
@@ -147,12 +156,17 @@
             <div class="hotways-tips">
               <button>FILMED</button>
             </div>
-            <h5>神探夏洛克 第二季|碟中谍5：神秘国度|轻音少女 剧场版|猜火车|BJ单身日记|BJ</h5>
-            <p>伦敦，无比想去又不敢去的城市。一步一景，太多喜欢的影视剧发生在这里，上演着古今各种节奏激荡文化跳跃的故事。冒昧的拆分一下，这个路线是泰晤士河畔一日游~~不远处的大英博物馆和国王十字火车站还得有完整一天专门去。</p>
+            <h5>
+              神探夏洛克 第二季|碟中谍5：神秘国度|轻音少女
+              剧场版|猜火车|BJ单身日记|BJ
+            </h5>
+            <p>
+              伦敦，无比想去又不敢去的城市。一步一景，太多喜欢的影视剧发生在这里，上演着古今各种节奏激荡文化跳跃的故事。冒昧的拆分一下，这个路线是泰晤士河畔一日游~~不远处的大英博物馆和国王十字火车站还得有完整一天专门去。
+            </p>
           </div>
         </div>
         <div class="hotways-more">
-          <button>more</button>
+          <button @click="newmovies">more</button>
         </div>
       </div>
       <div class="log-keeper">
@@ -179,7 +193,9 @@
         <div class="log-fw">
           <div class="log-fwtop">
             <div class="log-fwleft">
-              <p>暂停营业变成永久停业，这些看片煲剧时朝思暮想的风味竟然再也吃不到了！</p>
+              <p>
+                暂停营业变成永久停业，这些看片煲剧时朝思暮想的风味竟然再也吃不到了！
+              </p>
               <img
                 src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1.meituan.net%2Fdeal%2F8174e51b814dac73e46c9fed5be0fbeb122307.jpg&refer=http%3A%2F%2Fp1.meituan.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614175507&t=6406b14fbb4f8cbba96a4a7fef250e69"
                 alt
@@ -190,7 +206,7 @@
             </div>
           </div>
           <div class="log-more">
-            <button>more</button>
+            <button @click="newmovies">more</button>
           </div>
         </div>
       </div>
@@ -264,6 +280,9 @@ export default {
     };
   },
   methods: {
+    gotodetails() {
+      this.$router.push({ path: "./details" });
+    },
     search() {
       this.$router.push({ path: "./search" });
     },

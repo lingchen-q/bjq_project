@@ -5,9 +5,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import 'lib-flexible';
+// import BaiduMap from 'vue-baidu-map'
 Vue.config.productionTip = false
 Vue.use(Vant);
-
+// Vue.use(BaiduMap,{
+//     ak:"GCVPQtfRaTSyqPvvKpUGwjTbqvoh4un3"
+//   });
 new Vue({
   router,
   store,

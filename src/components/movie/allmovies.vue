@@ -7,11 +7,41 @@
     ></van-pull-refresh>
     <div class="login-back">
       <van-icon name="arrow" class="goback" @click="goback" />
-      <h4>{{ className || "最新电影" }}</h4>
+      <h4>{{ className || "全部电影" }}</h4>
     </div>
+    <ul class="choose">
+      <li
+        v-for="(item, index) in list"
+        :key="index"
+        @click="classChange(item)"
+        :style="{
+          background: className == item.name ? 'black' : '#c0c0c0',
+        }"
+      >
+        {{ item.name }}
+      </li>
+      <!-- <li>爱情</li>
+      <li>喜剧</li>
+      <li>悬疑</li>
+      <li>惊悚</li>
+      <li>动作</li>
+      <li>科幻</li>
+      <li>奇幻</li>
+      <li>剧情</li>
+      <li>家庭</li>
+      <li>冒险</li> -->
+    </ul>
     <div class="item">
-      <div class="box"></div>
-      <ul class="movies" v-for="(item, index) in movielist" :key="index">
+      <!-- <div class="box"></div> -->
+      <ul
+        class="movies"
+        v-for="(item, index) in movielist"
+        :key="index"
+        v-show="
+          (item.class && item.class.indexOf(className) > -1) ||
+          className == '全部'
+        "
+      >
         <li class="moviesleft">
           <img :src="item.src" />
         </li>
@@ -28,16 +58,29 @@
     </div>
   </div>
 </template>
-
 <script>
 import bus from "../../../bus";
 import movielist from "../../model/filmModel";
 export default {
   data() {
     return {
+      // clasString: "",
       isLoading: false,
       movielist: [],
-      className: "",
+      className: "全部",
+      list: [
+        { id: 1, name: "全部" },
+        { id: 2, name: "爱情" },
+        { id: 3, name: "喜剧" },
+        { id: 4, name: "悬疑" },
+        { id: 5, name: "惊悚" },
+        { id: 6, name: "动作" },
+        { id: 7, name: "科幻" },
+        { id: 8, name: "奇幻" },
+        { id: 9, name: "剧情" },
+        { id: 10, name: "家庭" },
+        { id: 11, name: "冒险" },
+      ],
     };
   },
   methods: {
@@ -50,11 +93,14 @@ export default {
         this.isLoading = false;
       }, 1000);
     },
+    classChange(item) {
+      this.className = item.name;
+    },
   },
   created() {
+    console.log(this.$router.history.current.query);
+    console.log(this.$router);
     var className = this.$router.history.current.query.className;
-    var name = this.$router.history.current.query.name;
-
     movielist.movielist().then((res) => {
       var list = res.data;
       if (className) {
@@ -66,16 +112,10 @@ export default {
         });
         this.className = className;
       }
-      if (name) {
-        list = res.data.filter((item) => {
-          if (item.name) {
-            return item.name.indexOf(name) > -1;
-          }
-          return false;
-        });
-      }
+      console.log(className, res.data, list);
       this.movielist = list;
     });
+
     bus.$emit("changeFlag", false);
   },
   beforeDestroy() {
@@ -91,6 +131,7 @@ export default {
   left: 0;
   top: 0;
   background-color: #fff;
+  /* margin-bottom: 40px; */
 }
 .item {
   height: 120px;
@@ -98,9 +139,9 @@ export default {
 .goback {
   float: left;
 }
-.box {
+/* .box {
   height: 60px;
-}
+} */
 .login-back h4 {
   margin-left: 108px;
   margin-top: 18px;
@@ -161,5 +202,24 @@ export default {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 600;
+}
+.choose {
+  /* width: 100%; */
+  margin: 0 10px;
+  height: 80px;
+  margin-top: 100px;
+}
+.choose li {
+  text-align: center;
+  background-color: #c0c0c0;
+  width: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  height: 20px;
+  border-radius: 4px;
+  margin-left: 18px;
+  margin-bottom: 8px;
+  float: left;
 }
 </style>

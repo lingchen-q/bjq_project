@@ -36,7 +36,8 @@
     "foreignlanguages":"Dark Water",
     "des":"2019/美国/剧情",
     "place":"西弗吉尼亚州 肯塔基州 汉密尔顿 巴特勒县" ,
-    "num":"片场25"
+    "num":"片场25",
+    "class":"剧情"
   }, 
   {"id":2,
     "name":"神奇女侠",
@@ -44,343 +45,392 @@
     "foreignlanguages":"Wonder Woman",
     "des":"2017/美国/动作/奇幻/冒险",
     "place":"意大利 英格兰 伦敦 巴黎市" ,
-    "num":"片场23"
+    "num":"片场23",
+    "class":"动作/奇幻/冒险"
   },{"id":3,
     "name":"食神",
     "src":"https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/w=580/sign=bdf7f1eda244ad342ebf878fe0a30c08/7aa2ad345982b2b7fc766ac432adcbef77099b2f.jpg" ,
     "foreignlanguages":"The God of Cookery",
     "des":"1996/中国香港/喜剧/动作",
     "place":"中国香港" ,
-    "num":"片场7"
+    "num":"片场7",
+    "class":"喜剧/动作"
   },{"id":4,
     "name":"神奇女侠1984",
-    "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg2.ali213.net%2Fpicfile%2FNews%2F2019%2F09%2F19%2F584_20190919113931493.jpg&refer=http%3A%2F%2Fimg2.ali213.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614239259&t=b280b990fc38c5f23c6bba7806dbb9f4" ,
+    "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg3.doubanio.com%2Fview%2Fphoto%2Fm%2Fpublic%2Fp2543796124.jpg&refer=http%3A%2F%2Fimg3.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614305453&t=f9ea646bcd00e7776bcaaae6ffc1de11" ,
     "foreignlanguages":"Wonder Woman 1984",
     "des":"2019/美国/动作/奇幻/冒险",
     "place":"威尔士 弗吉尼亚州 剑桥市 大伦敦 伦敦 萨里郡 阿尔梅里亚市 华盛顿哥伦比亚特区 加那利群岛自治区" ,
-    "num":"片场35"
+    "num":"片场35",
+    "class":"动作/奇幻/冒险"
   },{"id":5,
     "name":"行骗天下JP：公主篇",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1.doubanio.com%2Fview%2Fphoto%2Fs_ratio_poster%2Fpublic%2Fp2610002857.jpg&refer=http%3A%2F%2Fimg1.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614240456&t=fbdd0fd2f78f59d574aae42d6ad4aba1" ,
     "foreignlanguages":"コンフィデンスマンJP プリンセス編 ",
     "des":"2020/日本/喜剧/剧情",
     "place":"新加坡 东京都 千叶县 群马县 吉隆坡 芡城县 埼玉县 兰卡威 御殿场市 宇都宫市" , 
-    "num":"片场29"
+    "num":"片场29",
+    "class":"喜剧/剧情"
   },{"id":6,
     "name":"行骗天下JP",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201912%2F24%2F20191224224422_2HsM5.thumb.700_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614240634&t=1eb0c5138a6a5b1e1dfd61fb0efa209f" ,
     "foreignlanguages":"コンフィデンスマンJP",
     "des":"2018/日本/喜剧/剧情",
     "place":"神奈川县 东京都 坜木县 千叶县 静冈县 芡城县 埼玉县" ,
-    "num":"片场83"
+    "num":"片场83",
+    "class":"喜剧/剧情"
   },{"id":7,
     "name":"摩天轮",
     "src":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1922305940,3693857802&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Wonder Wheel",
     "des":"2017/美国/剧情",
     "place":"纽约" ,
-    "num":"片场13"
+    "num":"片场13",
+    "class":"剧情"
   },{"id":8,
     "name":"天使之城",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201401%2F04%2F20140104190023_vrd8k.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614252154&t=271621317c2c6484d9d12593059ce60a" ,
     "foreignlanguages":"City of Angels",
     "des":"1998/美国/爱情/剧情/奇幻",
     "place":"洛杉矶 旧金山 南太浩湖"  ,
-    "num":"片场26"
+    "num":"片场26",
+    "class":"爱情/剧情/奇幻"
   },{"id":9,
     "name":"柏林苍穹下",
     "src":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=721661508,558145219&fm=26&gp=0.jpg" ,
     "foreignlanguages":"The sky Above Berlin",
     "des":"1987/德国/爱情/剧情/奇幻",
     "place":"柏林"  ,
-    "num":"片场25"
+    "num":"片场25",
+    "class":"爱情/剧情/奇幻"
   },{"id":10,
     "name":"间谍之桥",
     "src":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2974960723,3297273430&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Bridge of Spies",
     "des":"2015/美国/剧情/传记/历史",
     "place":"加利福尼亚州 波 纽约 柏林 " ,
-    "num":"片场22"
+    "num":"片场22",
+    "class":"剧情/传记/历史"
   },{"id":11,
     "name":"行骗天下JP:运势篇",
     "src":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2106242510,1510802694&fm=26&gp=0.jpg" ,
     "foreignlanguages":"コンフィデンスマンJP 運勢編 ",
     "des":"2019/日本/喜剧/剧情",
     "place":"神奈川县 东京都 千叶县 御殿场市" ,
-    "num":"片场24"
+    "num":"片场24",
+    "class":"喜剧/剧情"
   },{"id":12,
     "name":"罗拉快跑",
     "src":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2496528308,3122275511&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Run Lola Run ",
     "des":"1998/德国/动作/犯罪/惊悚",
     "place":"柏林" ,
-    "num":"片场23"
+    "num":"片场23",
+    "class":"动作/犯罪/惊悚"
   },{"id":13,
     "name":"最幸福的季节",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg3.doubanio.com%2Fview%2Fphoto%2Fs_ratio_poster%2Fpublic%2Fp2625245511.jpg&refer=http%3A%2F%2Fimg3.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614252337&t=97dd46f5c32556e0d39dc5ef7f1bc0c5" ,
     "foreignlanguages":"Happiest Season ",
     "des":"2020/美国/爱情/同性",
     "place":"阿姆斯特朗县 阿利根尼县 匹兹堡 格罗夫城 巴特勒县" ,
-    "num":"片场18"
+    "num":"片场18",
+    "class":"爱情/同性"
   },{"id":14,
     "name":"信条",
     "src":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1859532173,1500231475&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Tenet ",
     "des":"2020/美国/科幻/动作/剧情",
     "place":"丹麦 意大利 伦敦 加利福尼亚州 洛杉矶 孟买 塔林 奥斯陆" ,
-    "num":"片场31"
+    "num":"片场31",
+    "class":"科幻/动作/剧情"
   },{"id":15,
     "name":"鲍勃的圣诞礼物",
     "src":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2388316286,533732824&fm=11&gp=0.jpg" ,
     "foreignlanguages":"A Christmas Gift From Bob ",
     "des":"2020/英国/喜剧/剧情",
     "place":"神大伦敦" ,
-    "num":"片场21"
+    "num":"片场21",
+    "class":"喜剧/剧情"
   },{"id":16,
     "name":"魔力月光",
     "src":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1499134208,2543448919&fm=15&gp=0.jpg" ,
     "foreignlanguages":"Magic in the Moonlight ",
     "des":"2014/美国/爱情/喜剧",
     "place":"伦敦 滨海阿尔卑斯省 尼斯 瓦尔省" ,
-    "num":"片场13"
+    "num":"片场13",
+    "class":"爱情/喜剧"
   },{"id":15,
     "name":"以你的心诠释我的爱",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwx1.sinaimg.cn%2Fmw690%2Fbfc164bdgy1gkhzmtnv0uj20m80rsgn3.jpg&refer=http%3A%2F%2Fwx1.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614252469&t=1a2c550a5b230d71ad5fbbf726fd8810" ,
     "foreignlanguages":"แปลรักฉันด้วยใจเธอ ",
     "des":"2020/泰国/爱情/同性",
     "place":"曼谷 普吉府" ,
-    "num":"片场27"
+    "num":"片场27",
+    "class":"爱情/同性"
   },{"id":16,
     "name":"空山灵雨",
     "src":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4266612587,1241753119&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Raining in the Mountain ",
     "des":"1979/中国香港/动作/武侠",
     "place":"韩国" ,
-    "num":"片场11"
+    "num":"片场11",
+    "class":"动作/武侠"
   },{"id":17,
     "name":"天生一对",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbecomeacouponqueen.com%2Fwp-content%2Fuploads%2F2018%2F11%2FThe-Parent-Trap-Special-Double-Trouble-Edition.jpg&refer=http%3A%2F%2Fbecomeacouponqueen.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614252533&t=a0ed5b55af0085c99897f44fec08be77" ,
     "foreignlanguages":"The Parent Trap ",
     "des":"1998/美国/爱情/喜剧/家庭",
     "place":"伦敦 洛杉矶县 圣贝呐迪诺县 旧金山 纳帕县" ,
-    "num":"片场33"
+    "num":"片场33",
+    "class":"爱情/喜剧/家庭"
   },{"id":18,
     "name":"山中奇迹",
     "src":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=565695273,2200610667&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Legend of the Mountain ",
     "des":"1979/中国香港/奇幻/武侠",
     "place":"韩国" ,
-    "num":"片场29"
+    "num":"片场29",
+    "class":"奇幻/武侠"
   },{"id":19,
     "name":"你好，旧时光",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg3.doubanio.com%2Fview%2Fnote%2Fl%2Fpublic%2Fp53118271.jpg&refer=http%3A%2F%2Fimg3.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614258332&t=439c2163251757b81f6a35f4613a3856" ,
     "foreignlanguages":"My Huckleberry Friends ",
     "des":"2017/中国/爱情/剧情",
     "place":"青岛市 北京市 三河市" ,
-    "num":"片场51"
+    "num":"片场51",
+    "class":"爱情/剧情"
   },{"id":20,
     "name":"爱在午夜降临前",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fblog%2F201408%2F02%2F20140802110746_JJGUZ.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614258370&t=c35753e854eb77bc541355c330d4c2ec" ,
     "foreignlanguages":"Before Midnight ",
     "des":"2013/美国/爱情/剧情",
     "place":"希腊" ,
-    "num":"片场10"
+    "num":"片场10",
+    "class":"爱情/剧情"
   },{"id":21,
     "name":"爱在日落黄昏时",
     "src":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3057515107,1893954177&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Before Midnight ",
     "des":"2004/美国/爱情/剧情",
     "place":"巴黎市" ,
-    "num":"片场21"
+    "num":"片场21",
+    "class":"爱情/剧情"
   },{"id":22,
     "name":"爱在黎明破晓前",
     "src":"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=243185068,3015339493&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Before Sunset ",
     "des":"1995/美国/爱情/剧情",
     "place":"维也纳" ,
-    "num":"片场10"
+    "num":"片场10",
+    "class":"爱情/剧情"
   },{"id":23,
     "name":"降临",
     "src":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3469398549,112415611&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Arrival",
     "des":"2016/美国/科幻",
     "place":"希腊" ,
-    "num":"片场5"
+    "num":"片场5",
+    "class":"科幻"
   },{"id":24,
     "name":"普罗米修斯",
     "src":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2220558424,1462312288&fm=15&gp=0.jpg" ,
     "foreignlanguages":"Prometheus",
     "des":"2012/美国/科幻/惊悚/冒险",
     "place":"约旦 冰岛 苏格兰" ,
-    "num":"片场3"
+    "num":"片场3",
+    "class":"科幻/惊悚/冒险"
   },{"id":25,
     "name":"年轻的维多利亚",
     "src":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3866757161,1398193754&fm=26&gp=0.jpg" ,
     "foreignlanguages":"The Young Victoria",
     "des":"2009/英国/爱情/传记/历史",
     "place":"牛津郡 大伦敦 林肯郡 阿伦德尔 赫特福德" ,
-    "num":"片场15"
+    "num":"片场15",
+    "class":"爱情/传记/历史"
   },{"id":26,
     "name":"瑞普·凡·温克尔的新娘 ",
     "src":"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3425326166,2911297369&fm=26&gp=0.jpg" ,
     "foreignlanguages":" リップヴァンウィンクルの花嫁 ",
     "des":"2016/日本/剧情",
     "place":"东京都 千叶县 川崎市 横滨市 箱根町 坂户市" ,
-    "num":"片场31"
+    "num":"片场31",
+    "class":"剧情"
   },{"id":27,
     "name":"撕裂的末日",
     "src":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=502588161,2798803236&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Equilibrium ",
     "des":"2002/美国/科幻/动作/惊悚",
     "place":"柏林 罗马" ,
-    "num":"片场10"
+    "num":"片场10",
+    "class":"科幻/动作/惊悚"
   },{"id":28,
     "name":"不明身份",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180428%2F34b0498db4e34a139a27d9db8b960ca4.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259152&t=0aaf87fa5dae5c9f867f22208701ee47" ,
     "foreignlanguages":"Unknown ",
     "des":"2011/美国/悬疑/惊悚",
     "place":"波芡坦 萨克森自治州 柏林" ,
-    "num":"片场20"
+    "num":"片场20",
+    "class":"悬疑/惊悚"
   },{"id":29,
     "name":"四月物语",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn.sinaimg.cn%2Ftranslate%2F205%2Fw750h1055%2F20180920%2FYv_Q-hkhfqnt2227788.jpg&refer=http%3A%2F%2Fn.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259166&t=0de1ef577ced8ec09c9700cf0f4beb10" ,
     "foreignlanguages":"四月物语 ",
     "des":"1998/日本/爱情",
     "place":"东京都 坜木县 千叶市" ,
-    "num":"片场12"
+    "num":"片场12",
+    "class":"爱情"
   },{"id":30,
     "name":"剪刀手爱德华",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcdn.adguider.com%2Fcodespace%2Fwechat%2F2020-01-29%2Fpic%2Fd8791abdb6da15b62dd36cefb7757889.jpg%3Fx-oss-process%3Dstyle%2FadguiderDC&refer=http%3A%2F%2Fcdn.adguider.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259181&t=e638fc83f1cf136ae70bde8bdff30b90" ,
     "foreignlanguages":"Edward Scissorhands ",
     "des":"1990/美国/爱情/剧情/奇幻",
     "place":"佛罗里达州" ,
-    "num":"片场3"
+    "num":"片场3",
+    "class":"爱情/剧情/奇幻"
   },{"id":31,
     "name":"自杀小队",
     "src":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=440979309,520049770&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Suicide Squad ",
     "des":"2016/美国/动作/犯罪/奇幻",
     "place":"洛杉矶 多伦多" ,
-    "num":"片场21"
+    "num":"片场21",
+    "class":"动作/犯罪/奇幻"
   },{"id":32,
     "name":"关于莉莉周的一切",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fgif-china.cc%2Fuploads%2Fallimg%2F201612%2Ff53319eaaa65a360.jpg&refer=http%3A%2F%2Fgif-china.cc&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259213&t=0587bfb8a4c9bd0a765f5846b24a0cf0" ,
     "foreignlanguages":"リリイ·シュシュのすべて ",
     "des":"2001/日本/剧情",
     "place":"东京都 冲绳县 群马县 足利市 佐野市 宇都宫市" ,
-    "num":"片场22"
+    "num":"片场22",
+    "class":"剧情"
   },{"id":33,
     "name":"超时空接触",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi.gtimg.cn%2Fqqlive%2Fimg%2Fjpgcache%2Ffiles%2Fqqvideo%2Fz%2Fz5lsh7nb6y2n3pb.jpg&refer=http%3A%2F%2Fi.gtimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259279&t=98b0b500b89f63378d492699943bdb67" ,
     "foreignlanguages":"Contact ",
     "des":"1997/美国/科幻/悬疑/惊悚/剧情",
     "place":"波多黎各 加拿大 佛罗里达州 弗吉尼亚州 新墨西哥州 洛杉矶县 华盛顿哥伦比亚特区 亚利桑那州" ,
-    "num":"片场10"
+    "num":"片场10",
+    "class":"科幻/悬疑/惊悚/剧情"
   },{"id":34,
     "name":"花与爱丽丝杀人事件",
     "src":"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=997316829,3973105290&fm=26&gp=0.jpg" ,
     "foreignlanguages":"花とアリス殺人事件 ",
     "des":"2015/日本/喜剧/动画",
     "place":"镰仓市 东京都 坜木县 千叶县 川崎市 横滨市" ,
-    "num":"片场31"
+    "num":"片场31",
+    "class":"喜剧/动画"
   },{"id":35,
     "name":"超能查派",
     "src":"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1792560762,1958022011&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Chappie ",
     "des":"2015/美国/科幻/动作/惊悚",
     "place":"约翰内斯堡市 艾古莱尼市" ,
-    "num":"片场13"
+    "num":"片场13",
+    "class":"科幻/动作/惊悚"
   },{"id":36,
     "name":"花与爱丽丝",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201502%2F09%2F20150209104554_izYRA.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259376&t=1103a8826196f9cb837bb9ce152cc884" ,
     "foreignlanguages":"花とアリス ",
     "des":"2004/日本/爱情/喜剧/剧情",
     "place":"镰仓市 东京都 足利市 神栖市 坜木县 千叶县 川崎市 横滨市" ,
-    "num":"片场27"
+    "num":"片场27",
+    "class":"爱情/喜剧/剧情"
   },{"id":37,
     "name":"十二罗汉",
     "src":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2448961293,33771005&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Ocean's Twelve ",
     "des":"2004/美国/动作/犯罪",
     "place":"摩纳哥 西西里大区 洛杉矶县 巴黎市 伊利诺伊市 阿姆斯特丹 拉斯维加斯 科莫省 罗马 海牙" ,
-    "num":"片场29"
+    "num":"片场29",
+    "class":"动作/犯罪"
   },{"id":38,
     "name":"西小河的夏天",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fpic%2F4%2F98%2Faa80a92874.jpg&refer=http%3A%2F%2Fpic1.win4000.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259453&t=8b2e73ddf356df610ae3fbde086aa39b" ,
     "foreignlanguages":"End of Summer ",
     "des":"2017/中国/剧情/家庭",
     "place":"绍兴市 诸暨市 成周市" ,
-    "num":"片场17"
+    "num":"片场17",
+    "class":"剧情/家庭"
   },{"id":39,
     "name":"最好的我们",
     "src":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4056258883,664182594&fm=26&gp=0.jpg" ,
     "foreignlanguages":"My Best Summer ",
     "des":"2019/中国/爱情/剧情",
     "place":"武汉市" ,
-    "num":"片场20"
+    "num":"片场20",
+    "class":"爱情/剧情"
   },{"id":40,
     "name":"花木兰",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn10108%2F157%2Fw738h1019%2F20200224%2F35e3-ipvnszf2873236.jpg&refer=http%3A%2F%2Fn.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259496&t=8238de578140a147f1622b0bf340d5dd" ,
     "foreignlanguages":"Mulan ",
     "des":"2020/美国/动作/奇幻/冒险",
     "place":"中国 新西兰" ,
-    "num":"片场13"
+    "num":"片场13",
+    "class":"动作/奇幻/冒险"
   },{"id":41,
     "name":"十一罗汉",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180503%2F20d40c2bdf55475fa633e0bafa55bba2.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259511&t=7921c3ee67d5fa587dfcc227ab0c63c9" ,
     "foreignlanguages":"Ocean's Eleven ",
     "des":"2001/美国/犯罪/惊悚",
     "place":"新泽西州 大西洋城 佛罗里达州 加利福尼亚州 洛杉矶 芝加哥 拉斯维加斯 棕泉" ,
-    "num":"片场14"
+    "num":"片场14",
+    "class":"犯罪/惊悚"
   },{"id":42,
     "name":"赌城风云",
     "src":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4086898574,2231188325&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Before Midnight ",
     "des":"2013/美国/爱情/剧情",
     "place":"希腊" ,
-    "num":"片场29"
+    "num":"片场29",
+    "class":"爱情/剧情"
   },{"id":43,
     "name":"以家人之名",
-    "src":"https://bkimg.cdn.bcebos.com/pic/6a63f6246b600c338744a6c9f905460fd9f9d72a0bd2?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxODA=,g_7,xp_5,yp_5" ,
+    "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F11190342879%2F0.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614305498&t=6e12bc6d8ef6af9128b1687662d2a938" ,
     "foreignlanguages":"Go Ahead ",
     "des":"2020/中国/剧情/家庭",
     "place":"厦门市  漳州市 泉州市" ,
-    "num":"片场81"
+    "num":"片场81",
+    "class":"剧情/家庭"
   },{"id":44,
     "name":"闰年",
     "src":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=292431949,2468936225&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Leap Year ",
     "des":"2010/美国/爱情/喜剧",
     "place":"爱尔兰" ,
-    "num":"片场14"
+    "num":"片场14",
+    "class":"爱情/喜剧"
   },{"id":45,
     "name":"龙虾",
     "src":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2247159544,3671011405&fm=26&gp=0.jpg" ,
     "foreignlanguages":"Before Midnight ",
     "des":"2015/爱尔兰/喜剧/奇幻",
     "place":"爱尔兰" ,
-    "num":"片场9"
+    "num":"片场9",
+    "class":"喜剧/奇幻"
   },{"id":46,
     "name":"附注：我爱你",
     "src":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3732495132,679269715&fm=15&gp=0.jpg" ,
     "foreignlanguages":"P.S.I Love You ",
     "des":"2007/美国/爱情",
     "place":"爱尔兰 纽约" ,
-    "num":"片场21"
+    "num":"片场21",
+    "class":"爱情"
   },{"id":47,
     "name":"初恋这首情歌",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170322%2Fb10054b2ceaf441a9924f1d2c7fa04e2.jpeg&refer=http%3A%2F%2Fimg.mp.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259749&t=c939c3726405641b2a8a367e6e68579d" ,
     "foreignlanguages":"Sing Street",
     "des":"2016/爱尔兰/爱情/音乐",
     "place":"都柏林 邓莱里-拉斯当郡" ,
-    "num":"片场11"
+    "num":"片场11",
+    "class":"爱情/音乐"
   },{"id":48,
     "name":"二十不惑",
     "src":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn.sinaimg.cn%2Fsinakd20200723ac%2F732%2Fw828h704%2F20200723%2Fd91d-iwtqvyk4503116.jpg&refer=http%3A%2F%2Fn.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614259775&t=4583f7e1d52c799dfe7d3528a6dc3e64" ,
     "foreignlanguages":"Twenty Your Life On ",
     "des":"2020/中国美国/爱情/剧情",
     "place":"上海市 深圳市 东莞市" ,
-    "num":"片场64"
+    "num":"片场64",
+    "class":"爱情/剧情"
   }
   ]
 }

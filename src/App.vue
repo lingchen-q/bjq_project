@@ -33,13 +33,12 @@ export default {
   },
   methods: {
     onChange(index) {
-      console.log("index", index);
       switch (index) {
         case 0:
           this.$router.push({ path: "./" });
           break;
         case 1:
-          this.$router.push({ path: "./movie" });
+          this.$router.push({ path: "./Movie" });
           break;
 
         case 2:

@@ -1,31 +1,12 @@
 <template>
   <div>
-    <div class="search-box">
-      <select v-model="one">
-        <option>{{x.name}}{{x.famname}}</option>
-      </select>
-      <br />
-      <ul>
-        <option>全部</option>
-        <option>电影</option>
-        <option>地点</option>
-        <option>城市</option>
-        <option>路线</option>
-        <option>场记</option>
-        <option>人物</option>
-      </ul>
-      <input type="text" />
-      <button>取消</button>
+    <div class="gotoback">
+      <van-icon name="arrow" class="goback" @click="goback" />
     </div>
-    <!-- <form action="/">
-      <van-search
-        v-model="value"
-        show-action
-        placeholder="全部"
-        @search="onSearch"
-        @cancel="onCancel"
-      />
-    </form>-->
+    <div class="search-box">
+      <input type="text" class="pulldowninput" v-model="searchName" />
+      <button @click="search">搜索</button>
+    </div>
     <div class="message">
       <div class="message-top">
         <p>大家都在搜</p>
@@ -47,31 +28,85 @@
 </template>
 <script>
 import bus from "../../bus";
-import { Toast } from "vant";
+import movielist from "../model/filmModel";
 export default {
   data() {
     return {
       value: "",
+      className: "全部",
+      movielist: [],
+      searchName: "",
     };
   },
+  created() {
+    movielist.movielist().then((res) => {
+      this.movielist = res.data;
+    });
+
+    bus.$emit("changeFlag", false);
+  },
+  computed: {},
   methods: {
-    onSearch(val) {
-      Toast(val);
+    goback() {
+      this.$router.go(-1);
     },
-    onCancel() {
-      Toast("取消");
+
+    search() {
+      console.log(this.searchName);
+      if (this.searchName) {
+        this.$router.push("/newmovies?name=" + this.searchName);
+      } else {
+        return false;
+      }
     },
   },
 
-  created() {
-    bus.$emit("changeFlag", false);
-  },
   beforeDestroy() {
     bus.$emit("changeFlag", true);
   },
 };
 </script>
 <style scoped>
+.gotoback {
+  /* width: 100%; */
+  height: 50px;
+}
+.goback {
+  margin-left: 20px;
+  /* margin-top: ; */
+}
+.search-box {
+  /* width: 100%; */
+  height: 40px;
+  /* margin: */
+}
+.pulldown {
+  width: 60px;
+  height: 40px;
+  font-size: 12px;
+  border: 0;
+  font-weight: 600;
+  /* margin-right: 0px; */
+}
+.pulldowninput {
+  width: 250px;
+  margin-left: 40px;
+  height: 40px;
+  /* border-radius: 4px; */
+  border-color: #c0c0c0;
+  /* outline: non-e; */
+  border: 0;
+  border-bottom: 0.5px solid #c0c0c0;
+  /* border-left: 0.5px solid #c0c0c0; */
+}
+.search-box button {
+  width: 60px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 0;
+  border: 0.5px solid #c0c0c0;
+}
 .message {
   height: 160px;
   margin: 0 10px;

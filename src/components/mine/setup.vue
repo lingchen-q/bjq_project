@@ -1,6 +1,6 @@
 <template>
   <div class="setup" ref="homePage">
-    <div class="login-back">
+    <div class="loginBack">
       <van-icon name="arrow" class="goback" @click="goback" />
       <h4>个人设置</h4>
     </div>
@@ -44,7 +44,8 @@
   overflow-y: scroll;
   /* overflow-x: none; */
 }
-.login-back {
+.loginBack {
+  height: 40px;
   width: 100%;
   text-align: center;
 }

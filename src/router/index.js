@@ -11,6 +11,10 @@ import Register from "../components/mine/Register.vue"
 import Loginin from "../components/mine/Loginin.vue"
 import setup from "../components/mine/setup.vue"
 import newmovies from "../components/Home/newmovies"
+import allmovies from "../components/movie/allmovies"
+import details from "../components/Home/details"
+import describe from "../components/Home/describe"
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -47,15 +51,18 @@ const routes = [
   {
     path:"/login",
     name:"login",
-    component:login
+    component:login,
+    children:[
+     
+    ]
+  }, {
+    path:"/login/Loginin",
+    name:"Loginin",
+    component:Loginin
   }, {
     path:"/Register",
     name:"Register",
     component:Register
-  }, {
-    path:"/Loginin",
-    name:"Loginin",
-    component:Loginin
   },{
     path:"/setup",
     name:"setup",
@@ -65,7 +72,21 @@ const routes = [
     path:"/newmovies",
     name:"newmovies",
     component:newmovies
+  }, {
+    path:"/allmovies",
+    name:"allmovies",
+    component:allmovies
+  },{
+    path:"/details",
+    name:"details",
+    component:details
+  },{
+    path:"/describe",
+    name:"describe",
+    component:describe
   },
+
+
 
 ]
 

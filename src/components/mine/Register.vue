@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="flag">
     <div class="login-back">
       <van-icon name="arrow" class="goback" @click="goback" />
     </div>
@@ -13,8 +13,14 @@
         name="username"
         label="用户名"
         placeholder="用户名"
-        :rules="[{ required: true, message: '请填写用户名' },
-                 {pattern:/^[_$a-z][_$0-9a-z]{4,9}$/i,message:'请输入正确的用户名',trigger:'onChange'}]"
+        :rules="[
+          { required: true, message: '请填写用户名' },
+          {
+            pattern: /^[_$a-z][_$0-9a-z]{4,9}$/i,
+            message: '请输入正确的用户名',
+            trigger: 'onChange',
+          },
+        ]"
       />
       <van-field
         class="userpwdinput"
@@ -23,7 +29,14 @@
         name="userpwd"
         label="密码"
         placeholder="密码"
-        :rules="[{ required: true, message: '请填写密码' }, {pattern:/^[0-9a-z]{6,12}$/i,message:'请输入数字字母组成长度6到12位',trigger:'onChange'}]"
+        :rules="[
+          { required: true, message: '请填写密码' },
+          {
+            pattern: /^[0-9a-z]{6,12}$/i,
+            message: '请输入数字字母组成长度6到12位',
+            trigger: 'onChange',
+          },
+        ]"
       />
       <van-field
         class="userpwdinput"
@@ -32,16 +45,26 @@
         name="userpwd1"
         label="确认密码"
         placeholder="确认密码"
-        :rules="[{ required: true, message: '请填写密码' }, {pattern:/^[0-9a-z]{6,12}$/i,message:'请输入数字字母组成长度6到12位',trigger:'onChange'}]"
+        :rules="[
+          { required: true, message: '请填写密码' },
+          {
+            pattern: /^[0-9a-z]{6,12}$/i,
+            message: '请输入数字字母组成长度6到12位',
+            trigger: 'onChange',
+          },
+        ]"
       />
       <div style="margin: 16px">
-        <van-button class="submit" round block type="info" native-type="submit">注册</van-button>
+        <van-button class="submit" round block type="info" native-type="submit"
+          >注册</van-button
+        >
       </div>
     </van-form>
     <div class="login-bottom">
       <van-divider
         :style="{ color: '#c0c0c0', borderColor: '#c0c0c0', padding: '0 40px' }"
-      >没有故事地点终究是冰冷的</van-divider>
+        >没有故事地点终究是冰冷的</van-divider
+      >
     </div>
   </div>
 </template>
@@ -84,6 +107,7 @@ import { Toast } from "vant";
 export default {
   data() {
     return {
+      flag: true,
       username: "",
       password: "",
       password1: "",

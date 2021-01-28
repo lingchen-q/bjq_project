@@ -1,6 +1,10 @@
 <template>
   <div class="mine">
-    <van-pull-refresh v-model="isLoading" @refresh="onRefresh" success-text="刷新成功">
+    <van-pull-refresh
+      v-model="isLoading"
+      @refresh="onRefresh"
+      success-text="刷新成功"
+    >
       <div class="mine-title">
         <p>个人</p>
       </div>
@@ -10,11 +14,13 @@
             <img src="../../img/ss.png" alt />
           </div>
           <div class="head-right" v-if="flag">
-            <van-button color="#c0c0c0" plain @click="login">立刻登录</van-button>
+            <van-button color="#c0c0c0" plain @click="login"
+              >立刻登录</van-button
+            >
           </div>
           <div class="head-right loginafter" v-if="!flag">
             <p>
-              <span>{{username}}</span>
+              <span>{{ username }}</span>
               的个人主页
             </p>
           </div>
@@ -22,7 +28,10 @@
         <div class="login-right">
           <div class="login-icon">
             <i class="iconfont icon-xin login login-letter"></i>
-            <i class="iconfont icon-shezhi1 login login-setup" @click="login_setup"></i>
+            <i
+              class="iconfont icon-shezhi1 login login-setup"
+              @click="login_setup"
+            ></i>
           </div>
         </div>
       </div>
@@ -44,13 +53,20 @@
           type="primary"
           block
           @click="showPopup"
-        >退出</van-button>
+          >退出</van-button
+        >
         <van-popup v-model="show">
           <div class="tui">
             <div class="logout1">您确定要退出吗?</div>
             <div class="logout2">
               <p class="confirm" @click="logout">确定</p>
-              <p class="cancel" @click="show=!show" style="border-right:1px solid #666">取消</p>
+              <p
+                class="cancel"
+                @click="show = !show"
+                style="border-right: 1px solid #666"
+              >
+                取消
+              </p>
             </div>
           </div>
         </van-popup>
@@ -140,7 +156,7 @@ export default {
   },
   methods: {
     login() {
-      this.$router.push({ path: "./login" });
+      this.$router.push({ path: "login" });
     },
 
     onRefresh() {
