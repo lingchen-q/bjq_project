@@ -103,8 +103,8 @@ export default {
   color: #fff;
 }
 .login-tips {
-  height: 60px;
-  line-height: 60px;
+  height: 100px;
+  line-height: 100px;
 }
 .up {
   font-size: 14px;

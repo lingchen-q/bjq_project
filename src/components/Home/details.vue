@@ -220,6 +220,8 @@
 }
 </style>
 <script>
+import bus from "../../../bus";
+
 export default {
   data() {
     return {
@@ -399,6 +401,12 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    bus.$emit("changeFlag", false);
+  },
+  beforeDestroy() {
+    bus.$emit("changeFlag", true);
   },
   methods: {
     goback() {

@@ -1,10 +1,14 @@
 <template>
   <div>
     <div class="place">
-      <van-pull-refresh v-model="isLoading" @refresh="onRefresh" success-text="刷新成功">
+      <van-pull-refresh
+        v-model="isLoading"
+        @refresh="onRefresh"
+        success-text="刷新成功"
+      >
         <div class="searchBox">
           <div class="searchBox-img">
-            <i class="iconfont icon-sousuo searchbox-i"></i>
+            <!-- <i class="iconfont icon-sousuo searchbox-i"></i> -->
           </div>
           <div class="searchBox-title">
             <p>地点</p>
@@ -13,6 +17,7 @@
         <div class="city-ad">
           <img
             src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F11983703613%2F0.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1613975333&t=fdb04bc8c83c59d6d79ec081834ab1eb"
+            @click="newmovies"
           />
           <p>一起爬山吗?</p>
         </div>
@@ -20,6 +25,7 @@
           <div class="maps-img">
             <img
               src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3409008777,3689822072&fm=26&gp=0.jpg"
+              @click="newmovies"
               alt
             />
           </div>
@@ -32,7 +38,7 @@
             <p>NEARBY</p>
           </div>
         </div>
-        <div class="allnavlist">
+        <div class="allnavlist" @click="newmovies">
           <div class="allnav">
             <div class="allnav-top">
               <p>全部</p>
@@ -77,6 +83,9 @@ export default {
       setTimeout(() => {
         this.isLoading = false;
       }, 1000);
+    },
+    newmovies() {
+      this.$router.push({ path: "./newmovies" });
     },
   },
 };

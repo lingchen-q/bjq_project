@@ -212,15 +212,6 @@ export default {
   box-sizing: border-box;
   border-radius: 2px;
   position: relative;
-  /* background: linear-gradient(
-    to right,
-    transparent 0%,
-    transparent 50%,
-    #c0c0c0 50%,
-    #c0c0c0 100%
-  );
-  background-size: 15px 1px;
-  background-repeat: repeat-x; */
 }
 .login-pic {
   width: 160px;
@@ -243,13 +234,24 @@ export default {
   float: left;
   width: 30%;
   position: relative;
+  display: block;
+}
+.login-letter {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.login-setup {
+  display: block;
+  margin-left: 10px;
 }
 .login-icon {
   width: 24px;
   height: 20px;
   position: absolute;
-  right: 30%;
-  bottom: 10%;
+  right: 34%;
+  bottom: 16%;
+  margin-left: 10px;
   display: block;
 }
 .login {
@@ -261,9 +263,7 @@ export default {
 .loginafter p {
   width: 220px;
   font-size: 20px;
-  /* margin-left: 20px; */
   color: #c8c8c8;
-  /* opacity: 0.4; */
 }
 .popup {
   position: absolute;
@@ -271,11 +271,7 @@ export default {
   top: 0;
   width: 60px;
   height: 30px;
-  /* border-color: gery; */
-  /* color: #c0c0c0; */
   font-weight: 600;
-  /* border: 0; */
-  /* border-radius: 8px; */
 }
 .tui {
   overflow: hidden;

@@ -128,6 +128,6 @@ export default {
   border-color: grey;
 }
 .login-bottom {
-  margin-top: 220px;
+  margin-top: 270px;
 }
 </style>

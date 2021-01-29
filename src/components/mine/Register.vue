@@ -97,7 +97,7 @@
   border-color: grey;
 }
 .login-bottom {
-  margin-top: 180px;
+  margin-top: 230px;
 }
 </style>
 <script>
@@ -113,7 +113,7 @@ export default {
       password1: "",
     };
   },
-  created() {
+  mounted() {
     bus.$emit("changeFlag", false);
   },
   beforeDestroy() {
@@ -140,7 +140,7 @@ export default {
               })
               .then(() => {
                 //    console.log(res.data);  成功以后 会返回成功的结果  是一个对象
-                this.$router.history.push("/loginin");
+                this.$router.push("/login/Loginin");
               });
           }
         });

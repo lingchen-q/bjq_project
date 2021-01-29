@@ -15,23 +15,27 @@
         <van-swipe-item>
           <img
             src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%253A%252F%252Fdingyue.ws.126.net%252F2021%252F0105%252F15257905j00qmg13y001cc000vj00hom.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614048757&t=f1bf32782183374852efce9537783b4a"
+            @click="newmovies"
           />
         </van-swipe-item>
         <van-swipe-item>
           <img
             src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201610%2F08%2F20161008074924_X3Ccn.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614052365&t=5c9f5565c48cc2ab393ce59675d19be7"
+            @click="newmovies"
             alt
           />
         </van-swipe-item>
         <van-swipe-item>
           <img
             src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3619277484,1071573902&fm=26&gp=0.jpg"
+            @click="newmovies"
             alt
           />
         </van-swipe-item>
         <van-swipe-item>
           <img
             src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=820813105,1657528262&fm=26&gp=0.jpg"
+            @click="newmovies"
             alt
           />
         </van-swipe-item>
@@ -63,6 +67,7 @@
         <div class="hotmovies-left">
           <img
             src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1859532173,1500231475&fm=26&gp=0.jpg"
+            @click="gotodetails"
             alt
           />
           <p class="hotmovies-title">信条</p>
@@ -78,7 +83,11 @@
         </div>
         <div class="hotmovies-right">
           <ul>
-            <li v-for="(item, index) in hotmovieslist" :key="index">
+            <li
+              v-for="(item, index) in hotmovieslist"
+              :key="index"
+              @click="gotodetails"
+            >
               <img :src="item.img" />
               <p>{{ item.name }}</p>
             </li>

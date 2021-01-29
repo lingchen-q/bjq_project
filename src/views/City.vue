@@ -1,34 +1,53 @@
 <template>
   <div class="city">
-    <van-pull-refresh v-model="isLoading" @refresh="onRefresh" success-text="刷新成功">
+    <van-pull-refresh
+      v-model="isLoading"
+      @refresh="onRefresh"
+      success-text="刷新成功"
+    >
       <div class="searchBox">
         <div class="searchBox-img">
-          <i class="iconfont icon-sousuo searchbox-i"></i>
+          <!-- <i class="iconfont icon-sousuo searchbox-i"></i> -->
         </div>
         <div class="searchBox-title">
           <p>城市</p>
         </div>
       </div>
       <div class="city-ad">
-        <img src="https://wx1.sinaimg.cn/large/008c7v7Tgy1gk1sxnnmppj31h90u0118.jpg" />
+        <img
+          src="https://wx1.sinaimg.cn/large/008c7v7Tgy1gk1sxnnmppj31h90u0118.jpg"
+          @click="newmovies"
+        />
         <p>叫做武汉的地方</p>
       </div>
-      <div class="nav-china" v-for="(item,index) in list " :key="index">
+      <div
+        class="nav-china"
+        v-for="(item, index) in list"
+        :key="index"
+        @click="newmovies"
+      >
         <div class="navchina-title">
-          <p class="navchina-title-p1">{{item.name.c_name}}</p>
-          <p class="navchina-title-p2">{{item.name.e_name}}</p>
+          <p class="navchina-title-p1">{{ item.name.c_name }}</p>
+          <p class="navchina-title-p2">{{ item.name.e_name }}</p>
         </div>
         <ul class="navchina-ul">
           <li
             class="navchina-li"
-            v-for="(content_item,content_index) in item.content_list"
+            v-for="(content_item, content_index) in item.content_list"
             :key="content_index"
           >
             <ul>
-              <li v-for="(img_item,img_index) in content_item" :key="img_index">
+              <li
+                v-for="(img_item, img_index) in content_item"
+                :key="img_index"
+              >
                 <img v-if="img_item.image" :src="img_item.image" alt />
-                <p v-if="img_item.c_name" class="navchina-li-p1">{{img_item.c_name}}</p>
-                <p v-if="img_item.e_name" class="navchina-li-p2">{{img_item.e_name}}</p>
+                <p v-if="img_item.c_name" class="navchina-li-p1">
+                  {{ img_item.c_name }}
+                </p>
+                <p v-if="img_item.e_name" class="navchina-li-p2">
+                  {{ img_item.e_name }}
+                </p>
               </li>
             </ul>
           </li>
@@ -37,7 +56,7 @@
           <button>more</button>
         </div>
       </div>
-      <div class="nav-ad">
+      <div class="nav-ad" @click="newmovies">
         <div class="nav-ad-img">
           <img
             src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=636070350,3804873683&fm=26&gp=0.jpg"
@@ -50,7 +69,7 @@
           <p>熟悉而陌生的纽约</p>
         </div>
       </div>
-      <div class="nav-all">
+      <div class="nav-all" @click="newmovies">
         <div class="navall-left">
           <h4>全部</h4>
         </div>
@@ -408,6 +427,9 @@ export default {
       setTimeout(() => {
         this.isLoading = false;
       }, 1000);
+    },
+    newmovies() {
+      this.$router.push({ path: "./newmovies" });
     },
   },
 };

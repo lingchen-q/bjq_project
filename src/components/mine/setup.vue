@@ -2,6 +2,8 @@
   <div class="setup" ref="homePage">
     <div class="loginBack">
       <van-icon name="arrow" class="goback" @click="goback" />
+    </div>
+    <div class="title">
       <h4>个人设置</h4>
     </div>
     <van-cell-group class="setup-top">
@@ -13,9 +15,9 @@
     </van-cell-group>
 
     <van-cell-group class="setup-middle">
-      <van-cell title="片场用户名" is-link value="1" />
-      <van-cell title="手机号码" value="1" />
-      <van-cell title="修改登录密码" is-link />
+      <van-cell title="片场用户名" is-link value="" />
+      <!-- <van-cell title="手机号码" value="1" /> -->
+      <!-- <van-cell title="修改登录密码" is-link /> -->
     </van-cell-group>
     <div class="general">
       <p>通用</p>
@@ -44,6 +46,13 @@
   overflow-y: scroll;
   /* overflow-x: none; */
 }
+.title {
+  margin: 10px 10px;
+}
+.title h4 {
+  font-size: 18px;
+  text-align: center;
+}
 .loginBack {
   height: 40px;
   width: 100%;
@@ -56,7 +65,7 @@
   margin-left: 108px;
   margin-top: 18px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   float: left;
 }
 .general {
@@ -68,8 +77,8 @@
 }
 .pcpic span {
   line-height: 90px;
-  font-size: 16px;
-  font-weight: 600;
+  /* font-size: 16px; */
+  /* font-weight: 600; */
 }
 .userless-box {
   height: 60px;

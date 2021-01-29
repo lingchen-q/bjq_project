@@ -7,7 +7,7 @@
     >
       <div class="searchBox">
         <div class="searchBox-img">
-          <i class="iconfont icon-sousuo searchbox-i"></i>
+          <!-- <i class="iconfont icon-sousuo searchbox-i"></i> -->
         </div>
         <div class="searchBox-title">
           <p>电影</p>
@@ -16,6 +16,7 @@
       <div class="beauty-ad">
         <img
           src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.08087.cc%2Fuploads%2F20200128%2F20%2F1580215374-kflMZyIpCK.png&refer=http%3A%2F%2Fimg.08087.cc&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1613966875&t=a887340721c0f776b98b2a11dbdbeb34"
+          @click="newmovies"
           alt
         />
         <p>银幕最美中国画</p>
@@ -57,16 +58,21 @@
           <img
             src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1859532173,1500231475&fm=26&gp=0.jpg"
             alt
+            @click="newmovies"
           />
           <p class="hotmovies-name">信条</p>
           <p class="hotmovies-introduce">2020 / 美国 / 科幻 / 动作 / 剧情</p>
-          <button>
+          <button @click="newmovies">
             <span>more</span>
           </button>
         </div>
         <div class="hotmovies-right">
           <ul>
-            <li v-for="(item, index) in hotmovieslist" :key="index">
+            <li
+              v-for="(item, index) in hotmovieslist"
+              :key="index"
+              @click="newmovies"
+            >
               <img :src="item.img" />
               <p>{{ item.name }}</p>
             </li>
@@ -81,6 +87,7 @@
           <img
             src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2680290747,401154000&fm=26&gp=0.jpg"
             alt
+            @click="newmovies"
           />
         </div>
         <div class="moviesad-p">
@@ -129,6 +136,9 @@ export default {
     },
     gotoall() {
       this.$router.push("./allmovies");
+    },
+    newmovies() {
+      this.$router.push({ path: "./newmovies" });
     },
   },
 };
